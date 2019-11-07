@@ -1,0 +1,41 @@
+// app global css in Stylus form
+@import 'font_faces.styl'
+@import 'typography.styl'
+
+.text-dark-accent
+  color: darken($accent, 60%)
+*:focus {
+  outline: none
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  line-height: 1.2;
+}
+button
+  padding: 0
+  border: none
+  cursor: pointer
+  box-shadow: none
+a
+  text-decoration: none
+  color: $primary
+.tfading-enter-active, .tfading-leave-active {
+  transition: all .6s ease
+}
+.tfading-enter, .tfading-leave-to {
+  transform: translateY(100px)
+  opacity: 0
+}
+.t-fading-enter-to, .t-fading-leave {
+  opacity: 1
+}
+.t-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.t-radius {
+  border-radius: $generic-border-radius
+}
